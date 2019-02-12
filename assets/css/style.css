@@ -16,3 +16,27 @@ body {
 #start-text {
   font-family: "Press Start 2P", cursive;
 }
+
+#coin:hover {
+  transform: scale(1.2);
+}
+
+#start-over {
+  display: none;
+}
+
+#answers li {
+  text-decoration: none;
+  list-style-type: lower-alpha;
+  font-size: 30px;
+}
+
+#answers li:hover {
+  background-color: yellow;
+}
+
+#Question-Container {
+  /* text-align: center; */
+  width: 50%;
+  margin: 0 auto;
+}

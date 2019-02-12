@@ -15,10 +15,40 @@
     <h1 id="heading">Video Game Trivia</h1>
 
     <div id="start-btn">
-      <img src="./assets/images/coin.png" alt="startbutton" /> <br />
+      <img id="coin" src="./assets/images/coin.png" alt="startbutton" /> <br />
       <h2 id="start-text">Press Coin to Start Game!</h2>
     </div>
 
+    <!--Question Screen-->
+    <div id="Question-Container">
+      <div id="question-number"></div>
+      <div id="time-left"></div>
+      <div id="question"></div>
+      <ul id="answers"></ul>
+    </div>
+
+    <!--Answer Screen-->
+    <div id="Answer-Container">
+      <div id="correct-incorrect"></div>
+      <div id="result-time"></div>
+      <div id="correct-answer"></div>
+      <div id="gif"></div>
+    </div>
+
+    <!--Final Result Screen-->
+    <div id="result-container">
+      <div id="result-heading"></div>
+      <div id="number-correct"></div>
+      <div id="number-incorrect"></div>
+      <div id="number-unanswered"></div>
+      <button id="start-over" type="button"></button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/javascript/game.js"></script>
   </body>
 </html>
