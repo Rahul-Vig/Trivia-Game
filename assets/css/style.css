@@ -27,8 +27,10 @@ body {
 
 #answers li {
   text-decoration: none;
-  list-style-type: lower-alpha;
+  list-style-type: none;
+  text-align: center;
   font-size: 30px;
+  font-family: "Press Start 2P", cursive;
 }
 
 #answers li:hover {
@@ -36,7 +38,21 @@ body {
 }
 
 #Question-Container {
-  /* text-align: center; */
   width: 50%;
   margin: 0 auto;
+}
+
+#question-number {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#time-left {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#question {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
 }
