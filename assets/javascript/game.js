@@ -141,6 +141,8 @@ $(document).ready(function() {
     }
   ];
 
+  $("#start-over").hide();
+
   $("#coin").on("click", function() {
     nextQuestion();
   });
@@ -187,6 +189,7 @@ $(document).ready(function() {
     corrAns = false;
     inCorr = false;
     notAnswer = false;
+    $("#start-over").show();
     $("#correct-answer").empty();
     $("#result-time").empty();
     $("#answers").empty();
@@ -195,7 +198,6 @@ $(document).ready(function() {
     $("#number-correct").html("<h2> Correct: " + correct + "</h2>");
     $("#number-incorrect").html("<h2> Incorrect: " + incorrect + "</h2>");
     $("#number-unanswered").html("<h2> Unanswered: " + unanswered + "</h2>");
-    $("#start-over").show();
 
     $("#start-over").on("click", function() {
       questionAsked = [];
