@@ -297,14 +297,16 @@ $(document).ready(function() {
 
     $("#answers li").click(function() {
       choice = $(this).index();
-      if (choice === randomQuestion.answer && secondsLeft > 0) {
+      if (choice === randomQuestion.answer && secondsLeft >= 0) {
         correct++;
         corrAns = true;
+        clearInterval(interval);
         answerScreen();
-      } else if (choice !== randomQuestion.answer && secondsLeft > 0) {
+      } else if (choice !== randomQuestion.answer && secondsLeft >= 0) {
         incorrect++;
         corrAns = false;
         inCorr = true;
+        clearInterval(interval);
         answerScreen();
       }
     });
@@ -314,6 +316,7 @@ $(document).ready(function() {
       inCorr = false;
       notAnswer = true;
       unanswered++;
+      clearInterval(interval);
       answerScreen();
     }, 17000);
   }
