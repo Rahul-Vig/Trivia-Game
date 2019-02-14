@@ -142,8 +142,11 @@ $(document).ready(function() {
   ];
 
   $("#start-over").hide();
-
+  var sound1 = document.getElementById("audio1");
+  var sound2 = document.getElementById("audio2");
   $("#coin").on("click", function() {
+    sound1.play();
+    sound2.play();
     nextQuestion();
   });
 
