@@ -203,6 +203,8 @@ $(document).ready(function() {
     $("#number-unanswered").html("<h2> Unanswered: " + unanswered + "</h2>");
 
     $("#start-over").on("click", function() {
+      sound2.pause();
+      sound2.currentTime = 0;
       questionAsked = [];
 
       questionCount = 0;
