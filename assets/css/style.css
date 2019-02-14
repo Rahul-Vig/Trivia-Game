@@ -22,7 +22,7 @@ body {
 }
 
 #start-over {
-  display: none;
+  visibility: hidden;
 }
 
 #gif {

@@ -219,7 +219,6 @@ $(document).ready(function() {
       $("#number-correct").empty();
       $("#number-incorrect").empty();
       $("#number-unanswered").empty();
-      $("#start-over").empty();
       $("#start-over").hide();
 
       $("#start-btn").show();
