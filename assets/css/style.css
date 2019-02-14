@@ -21,10 +21,6 @@ body {
   transform: scale(1.2);
 }
 
-#start-over {
-  visibility: hidden;
-}
-
 #gif {
   display: none;
   width: 100%;
@@ -116,6 +112,7 @@ body {
 #start-over {
   width: 100%;
   text-align: center;
+  visibility: hidden;
 }
 
 #start-over-btn {
