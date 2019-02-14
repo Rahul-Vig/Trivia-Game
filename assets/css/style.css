@@ -25,12 +25,20 @@ body {
   display: none;
 }
 
+#gif {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
 #answers li {
   text-decoration: none;
   list-style-type: none;
   text-align: center;
   font-size: 30px;
   font-family: "Press Start 2P", cursive;
+  margin: 15px;
+  cursor: pointer;
 }
 
 #answers li:hover {
@@ -40,6 +48,7 @@ body {
 #Question-Container {
   width: 50%;
   margin: 0 auto;
+  margin-top: 5%;
 }
 
 #question-number {
@@ -55,4 +64,77 @@ body {
 #question {
   text-align: center;
   font-family: "Press Start 2P", cursive;
+  line-height: 40px;
+}
+
+#Answer-Container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#correct-incorrect {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#result-time {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#correct-answer {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  line-height: 40px;
+}
+
+#result-Container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#result-heading {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#number-correct {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#number-incorrect {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#number-unanswered {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+#start-over {
+  width: 100%;
+  text-align: center;
+}
+
+#start-over-btn {
+  background-color: #e9e50a; /* Yellow */
+  border: none;
+  color: rgba(10, 2, 2, 0.952);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 740px) {
+  #Question-Container,
+  #Answer-Container,
+  #result-container {
+    width: 100%;
+  }
 }
