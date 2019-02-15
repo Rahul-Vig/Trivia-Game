@@ -45,7 +45,7 @@ body {
 #Question-Container {
   width: 50%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 #question-number {
@@ -67,6 +67,7 @@ body {
 #Answer-Container {
   width: 50%;
   margin: 0 auto;
+  margin-top: 8%;
 }
 
 #correct-incorrect {
